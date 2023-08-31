@@ -2,9 +2,9 @@ import kotlin.math.pow
 
 class Squares(private val number: Int) {
 
-    fun sumOfSquares() = (1..number).sumOf(::square)
+    fun sumOfSquares() = number * (number + 1) * (2 * number + 1) / 6
 
-    fun squareOfSum() = square((1..number).sum())
+    fun squareOfSum() = square(number * (number + 1) / 2)
 
     fun difference() = squareOfSum() - sumOfSquares()
 
