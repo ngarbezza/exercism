@@ -1,7 +1,6 @@
 object Isogram {
-
     fun isIsogram(input: String): Boolean {
-        val wordToCheck = input.lowercase().replace(Regex("\\W"), "")
-        return wordToCheck.length == wordToCheck.toSet().size
+        val charsToCheck = input.lowercase().replace(Regex("\\W"), "")
+        return charsToCheck.length == charsToCheck.toSet().size
     }
 }
